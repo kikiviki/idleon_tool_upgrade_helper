@@ -316,10 +316,14 @@ def get_tool_list(current_skill_level, tool_string):
         tool_array.sort(key = lambda x: x)
         tool_array_1D.sort(key=lambda x: x)
     #print(tool_array)
+    #print(tool_array)
     best_tool = 'None'
+    best_tool_level  = 0
     for each in range(len(tool_array)):
-        if tool_array[each][1] <= current_skill_level:
+        if tool_array[each][1] <= current_skill_level and tool_array[each][1] > best_tool_level:
+            #print("new tool", best_tool, tool_array[each][1], "<", current_skill_level, "<",best_tool_level )
             best_tool = tool_array[each][0]
+            best_tool_level = tool_array[each][1]
 
     return tool_name_dict[best_tool]
 
