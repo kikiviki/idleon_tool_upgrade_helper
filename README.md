@@ -2,7 +2,7 @@
 Tool helper for the game Idleon
 
 
-Header over to : https://www.idleonefficiency.com/raw-data
+Head over to : https://www.idleonefficiency.com/raw-data
 Extract the raw data
 
 Save it to a file you can call from the script. 
